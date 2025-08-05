@@ -1,7 +1,7 @@
 // 引入 createRouter（创建路由实例）和 createWebHistory（使用HTML5模式的路由）
 import { createRouter,createWebHistory } from 'vue-router'
 // 引入两个页面组件，分别对应不同的路径
-import Home from '../views/Home.vue'
+import Todo from '@/views/Todo.vue'
 import Login from '../views/Login.vue'
 // 定义路由表，每个对象代表一条路由规则
 const routes = [
@@ -11,9 +11,9 @@ const routes = [
         name: 'Login',
     },
     {
-        path: '/TodoPage',
-        component: Todo,
-        name: 'TodoPage',
+        path: '/Todo',
+        component:Todo,
+        name: 'Todo',
     }
 ]
 const router = createRouter({
